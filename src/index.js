@@ -21,7 +21,7 @@ class EventHandler {
     }
 
     const listenerIndex = this.listeners[type].indexOf(listener);
-    this.listeners[type].splice(listenerIndex);
+    this.listeners[type].splice(listenerIndex, 1);
     return this;
   }
 
