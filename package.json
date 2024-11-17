@@ -1,0 +1,8 @@
+{
+  "name": "event-handler",
+  "version": "1.0.0",
+  "description": "A simple library to allows you to use event listeners in your classes.",
+  "main": "src/index.js",
+  "author": "eliaselliotson",
+  "license": "MIT"
+}
