@@ -7,11 +7,14 @@ class EventHandler {
     }
 
     this.listeners[type].push(listener);
+
+    return this;
   }
 
   removeEventListener(type, listener) {
     const listenerIndex = this.listeners[type].indexOf(listener);
     this.listeners[type].splice(listenerIndex);
+    return this;
   }
 
   dispatchEvent(type, detail) {
@@ -28,6 +31,8 @@ class EventHandler {
         console.error(e);
       }
     }
+
+    return this;
   }
 }
 
