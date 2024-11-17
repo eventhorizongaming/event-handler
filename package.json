@@ -4,5 +4,6 @@
   "description": "A simple library to allows you to use event listeners in your classes.",
   "main": "src/index.js",
   "author": "eliaselliotson",
+  "type": "module",
   "license": "MIT"
 }
