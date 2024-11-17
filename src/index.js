@@ -3,7 +3,7 @@ class EventHandler {
 
   addEventListener(type, listener) {
     if (!type || !listener) {
-      return;
+      return this;
     }
 
     if (!this.listeners[type]) {
@@ -17,7 +17,7 @@ class EventHandler {
 
   removeEventListener(type, listener) {
     if (!type || !listener) {
-      return;
+      return this;
     }
 
     const listenerIndex = this.listeners[type].indexOf(listener);
@@ -27,13 +27,13 @@ class EventHandler {
 
   dispatchEvent(type, detail = {}) {
     if (!type) {
-      return;
+      return this;
     }
 
     const listeners = this.listeners[type];
 
     if (!listeners) {
-      return;
+      return this;
     }
 
     for (let listener of listeners) {
