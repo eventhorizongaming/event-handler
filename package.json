@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A simple library to allows you to use event listeners in your classes.",
   "main": "src/index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=\"$NODE_OPTIONS --experimental-vm-modules\" npx jest --coverage"
+  },
   "author": "eliaselliotson",
   "type": "module",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
